@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -65,8 +66,56 @@ a {
     justify-content: space-between;
 }
 
+.intro__info {
+    flex-grow: 2;
+}
+
 .info__small-heading {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-color);
+}
+
+.info__heading {
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.info__icons {
+    display: flex;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+}
+
+.item__text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.icons__item:first-of-type::before {
+    content: "\f0c2";
+}
+
+.icons__item:nth-of-type(2)::before {
+    content: "\f3d1";
+}
+
+.icons__item:last-of-type::before {
+    content: "\f2f2"
+}
+
+.icons__item::before {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
