@@ -13,6 +13,7 @@ body {
     background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    color: var(--text-color);
 }
 
 
@@ -66,9 +67,6 @@ a {
     justify-content: space-between;
 }
 
-.intro__info {
-    flex-grow: 2;
-}
 
 .info__small-heading {
     font-size: 1.5rem;
@@ -118,4 +116,62 @@ a {
     color: var(--accent-color);
     font-size: 2rem;
     margin-bottom: 10px;
+}
+
+.intro__form {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .13);
+}
+
+.form__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.form__input {
+    border: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid lightgray;
+}
+
+.intro__form .form__field .form__input::placeholder {
+    opacity: .4;
+}
+
+.form__button {
+    margin-top: 40px;
+    padding: 20px 30px;
+    color: white;
+    background-color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
+.form__button:hover {
+    color: var(--accent-color);
+    background-color: white;
+    border: 1px solid var(--accent-color);
+}
+
+.form__button:active {
+    color: var(--accent-color);
+    background-color: white;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.13) inset;
 }
