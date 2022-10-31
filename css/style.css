@@ -134,6 +134,7 @@ a {
 .form__field {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 label {
@@ -146,6 +147,7 @@ label {
     border: none;
     padding-bottom: 8px;
     border-bottom: 1px solid lightgray;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .intro__form .form__field .form__input::placeholder {
